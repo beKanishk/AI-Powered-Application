@@ -1,0 +1,19 @@
+package com.Project.AI.stock_image.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.Project.AI.stock_image.service.ChatService;
+
+@RestController
+public class AIController {
+	
+	@Autowired
+	ChatService chatService;
+	
+	@GetMapping("ask-ai")
+	public String getResponse(String prompt) {
+		return chatService.getResponse(prompt);
+	}
+}

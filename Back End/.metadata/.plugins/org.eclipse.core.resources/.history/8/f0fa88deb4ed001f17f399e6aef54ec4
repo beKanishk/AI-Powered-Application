@@ -1,0 +1,15 @@
+package com.Project.AI.stock_image.service;
+
+import org.springframework.ai.openai.OpenAiImageModel;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ImageService {
+	private final OpenAiImageModel imageModel;
+
+	public ImageService(OpenAiImageModel imageModel) {
+		this.imageModel = imageModel;
+	}
+	
+	
+}

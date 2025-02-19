@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.Project.audio_transcriber.configuration&apos; to &apos;Stock-Image-Generator/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;audio-transcriber&apos;&#x0D;&#x0A;- Destination element: &apos;Stock-Image-Generator/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;audio-transcriber/src/main/java/com.Project.audio_transcriber.configuration&apos;" description="Copy package" destination="=Stock-Image-Generator/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.Project.audio_transcriber.configuration" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1739949781483" version="1.0"/>
+</session>

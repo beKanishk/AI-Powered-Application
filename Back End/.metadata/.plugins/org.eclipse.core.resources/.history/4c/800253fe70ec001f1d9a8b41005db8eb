@@ -1,0 +1,11 @@
+package com.Project.AI.stock_image.service;
+
+import org.springframework.ai.chat.model.ChatModel;
+
+public class ChatService {
+	private final ChatModel chatModel;
+	
+	public ChatService(ChatModel chatModel) {
+		this.chatModel = chatModel;
+	}
+}

@@ -1,0 +1,5 @@
+package com.Project.AI.stock_image.service;
+
+public class ChatService {
+
+}

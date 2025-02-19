@@ -1,0 +1,33 @@
+import org.springframework.ai.chat.model.ChatModel;
+import org.springframework.ai.chat.model.ChatResponse;
+import org.springframework.ai.chat.prompt.ChatRequest;
+import org.springframework.ai.openai.OpenAiChatOptions;
+import org.springframework.stereotype.Service;
+import java.util.List;
+
+@Service
+public class ChatService {
+    private final ChatModel chatModel;
+
+    public ChatService(ChatModel chatModel) {
+        this.chatModel = chatModel;
+    }
+
+    public String getResponse(String promptText) {
+        ChatRequest request = new ChatRequest(List.of(promptText));
+        ChatResponse chatResponse = chatModel.call(request);
+        return chatResponse.getResults().get(0).getOutput().getContent();
+    }
+
+    public String getResponseOptions() {
+        ChatRequest request = new ChatRequest(
+                List.of("Generate the names of 5 famous pirates."),
+                OpenAiChatOptions.builder()
+                        .model("gpt-4-o")
+                        .temperature(0.4)
+                        .build()
+        );
+        ChatResponse chatResponse = chatModel.call(request);
+        return chatResponse.getResults().get(0).getOutput().getContent();
+    }
+}

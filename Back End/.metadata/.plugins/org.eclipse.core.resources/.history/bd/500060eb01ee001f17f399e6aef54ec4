@@ -1,0 +1,7 @@
+spring.application.name=Stock-Image-Generator
+
+spring.ai.openai.api-key=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
+
+spring.ai.openai.audio.transcription.base-url=https//api.openai.com
+spring.ai.openai.audio.transcription.options.model=whisper-1
+spring.ai.openai.audio.transcription.options.response-format=json
