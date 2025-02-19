@@ -77,6 +77,17 @@ This project is a full-stack web application that integrates AI-powered features
 - **Endpoint:** `GET /recipe-creator?ingredients={ingredients}&cuisine={cuisine}&dietaryRestrictions={restrictions}`
 - **Response:** AI-generated recipe in text format.
 
+### Screeshots
+-**AI Image Generator**
+![image](https://github.com/user-attachments/assets/4f97594f-e8bd-421a-babb-dbe7f2461d02)
+
+-**AI Chat**
+![image](https://github.com/user-attachments/assets/328d2b0f-f8e0-4d2b-b257-5c4852a547c8)
+
+-**AI Recipe Generator**
+![image](https://github.com/user-attachments/assets/dc1696e1-c8f8-443f-9f07-c04e7af9c86d)
+
+
 ## Contribution
 Feel free to contribute by creating issues, fixing bugs, or suggesting new features.
 
