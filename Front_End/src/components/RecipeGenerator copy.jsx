@@ -8,7 +8,7 @@ function RecipeGenerator(){
 
     const createRecipe = async () => {
         try {
-            const response = await fetch (`localhost:8080/recipe-creator?ingredients=${ingredients}&cuisine=${cuisine}&dietaryRestrictions=${dietaryRestrictions}`)
+            const response = await fetch (`http://localhost:8080/recipe-creator?ingredients=${ingredients}&cuisine=${cuisine}&dietaryRestrictions=${dietaryRestrictions}`)
 
             if(!response.ok){
                 throw new Error(`HTTP error! Status: ${response.status}`)

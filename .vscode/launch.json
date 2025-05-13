@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-StockImageGeneratorApplication<Stock-Image-Generator>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.Project.AI.stock_image.StockImageGeneratorApplication",
+            "projectName": "Stock-Image-Generator",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

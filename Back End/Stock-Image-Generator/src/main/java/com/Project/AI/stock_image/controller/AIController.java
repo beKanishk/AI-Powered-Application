@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Project.AI.stock_image.service.ChatService;
+import com.Project.AI.stock_image.service.GeminiService;
 import com.Project.AI.stock_image.service.ImageService;
 import com.Project.AI.stock_image.service.RecipeService;
 
@@ -26,6 +27,9 @@ public class AIController {
 	
 	@Autowired
 	RecipeService recipeService;
+	
+	@Autowired
+	GeminiService geminiService;
 	
 	@GetMapping("/ask-ai")
 	public String getResponse(@RequestParam String prompt) {
@@ -59,6 +63,7 @@ public class AIController {
 			@RequestParam(defaultValue = "any") String cuisine, 
 			@RequestParam(defaultValue = "") String dietaryRestrictions) {
 		
-		return recipeService.createRecipe(ingredients, cuisine, dietaryRestrictions);
+		return geminiService.createRecipe(ingredients, cuisine, dietaryRestrictions);
+//		return recipeService.createRecipe(ingredients, cuisine, dietaryRestrictions);
 	}
 }
